@@ -1,2 +1,13 @@
-INSERT INTO Book (name) VALUES ('Libro de la Selva');
-INSERT INTO Book (name) VALUES ('100 años de Soledad');
+INSERT INTO Author (author_name,last_name) VALUES ('Rudyard',' Kipling');
+INSERT INTO Author (author_name,last_name) VALUES ('Gabriel','García Márquez');
+INSERT INTO Author (author_name,last_name) VALUES ('Eric','Freeman');
+INSERT INTO Author (author_name,last_name) VALUES ('Elisabeth','Robson');
+INSERT INTO Author (author_name,last_name) VALUES ('Kathy','Sierra');
+INSERT INTO Book (name,editorial) VALUES ('Libro de la Selva','Macmillan Publishers');
+INSERT INTO Book (name,editorial) VALUES ('100 años de Soledad','Editorial Sudamericana');
+INSERT INTO Book (name,editorial) VALUES ('Head First Design Patterns','O''Reilly Media');
+INSERT INTO book_author (book_id,author_id) VALUES (1,1);
+INSERT INTO book_author (book_id,author_id) VALUES (2,2);
+INSERT INTO book_author (book_id,author_id) VALUES (3,3);
+INSERT INTO book_author (book_id,author_id) VALUES (3,4);
+INSERT INTO book_author (book_id,author_id) VALUES (3,5);
