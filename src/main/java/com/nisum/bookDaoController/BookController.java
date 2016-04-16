@@ -72,7 +72,6 @@ public class BookController {
 
             Book book = bookDao.findOne(idBook);
             bookDao.delete(idBook);
-            Book b = book;
             return new ResponseEntity<>(book,OK);
 
         }else{
