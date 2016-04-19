@@ -20,7 +20,7 @@ public class Book {
             name="Book_Author",
             joinColumns=@JoinColumn(name="book_id", referencedColumnName="ID"),
             inverseJoinColumns=@JoinColumn(name="author_id", referencedColumnName="ID"))
-    private List<Author> author;
+    private List<Author> authors;
 
     public int getId() {
         return bookId;
@@ -39,7 +39,7 @@ public class Book {
     }
 
     public List<Author> getAuthor() {
-        return author;
+        return authors;
     }
 
     public String getEditorial() {return editorial;
@@ -48,7 +48,7 @@ public class Book {
     public void setEditorial(String editorial) {this.editorial = editorial;
     }
 
-    public void setAuthor(List<Author> author) {
-        this.author = author;
+    public void setAuthor(List<Author> authors) {
+        this.authors = authors;
     }
 }
