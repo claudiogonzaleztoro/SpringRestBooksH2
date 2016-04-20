@@ -38,7 +38,7 @@ public class Book {
         this.name = name;
     }
 
-    public List<Author> getAuthor() {
+    public List<Author> getAuthors() {
         return authors;
     }
 
