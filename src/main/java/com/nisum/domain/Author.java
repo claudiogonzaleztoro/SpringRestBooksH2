@@ -9,7 +9,7 @@ public class Author {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name="ID")
+    @Column(name="id")
     private int authorId;
     @Column(name = "author_name")
     private String authorName;
